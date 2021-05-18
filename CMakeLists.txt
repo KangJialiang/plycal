@@ -71,7 +71,7 @@ link_directories(
   )
 
 set(
-	EDLINE_SRC  
+	EDLINE_SRC
 	${PROJECT_SOURCE_DIR}/thirdParty/edlines/EDLineDetector.cpp
 	)
 
