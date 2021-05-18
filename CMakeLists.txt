@@ -30,16 +30,16 @@ find_package(
   REQUIRED
   )
 find_package(
+  PCL
+  QUIET
+  REQUIRED
+  )
+find_package(
   Boost
   REQUIRED
   COMPONENTS
   system
   thread
-  )
-find_package(
-  PCL
-  QUIET
-  REQUIRED
   )
 find_package(
   Ceres
