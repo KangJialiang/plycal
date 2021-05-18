@@ -50,6 +50,8 @@ find_package(
 #   REQUIRED
 #   )
 
+find_package(Qt5Widgets REQUIRED) # Fix a compilation bug for VTK
+
 # Fix a compilation bug under ubuntu 16.04 (Xenial)
 list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
 add_definitions(${PCL_DEFINITIONS})
