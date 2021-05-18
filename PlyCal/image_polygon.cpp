@@ -946,7 +946,7 @@ bool ImagePolygon::SaveMarkedImage(const std::string& fn,
 
 	if(img.channels() == 1)
 	{
-		cv::cvtColor(img, img_line, CV_GRAY2BGR);
+		cv::cvtColor(img, img_line, cv::COLOR_GRAY2BGR);
 	}
 	else
 	{
@@ -966,7 +966,7 @@ bool ImagePolygon::SaveMarkedImage(const std::string& fn, const cv::Mat& img,
 
 	if(img.channels() == 1)
 	{
-		cv::cvtColor(img, img_line, CV_GRAY2BGR);
+		cv::cvtColor(img, img_line, cv::COLOR_GRAY2BGR);
 	}
 	else
 	{
