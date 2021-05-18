@@ -2,3 +2,4 @@
 .ycm_extra_conf.py
 *.swp
 CMakeLists.txt.user
+.vscode
