@@ -53,7 +53,7 @@ public:
     bool RefinePointcloud(const pcl::PointCloud<pcl::PointXYZI>& pc,
                           pcl::PointCloud<pcl::PointXYZRGB>& pcc,
                           const Eigen::Vector4d& param );
-    uint32_t SavePolygonData(const std::string& dir);
+    void SavePolygonData(const std::string& dir);
     void SetCameraK(const Eigen::Matrix3d& k)
     {
         K_ = k;

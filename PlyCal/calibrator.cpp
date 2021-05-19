@@ -582,7 +582,7 @@ void Calibrator::MatchLines(Polygon& ply) const
 
 
 
-uint32_t Calibrator::SavePolygonData(const std::string& dir)
+void Calibrator::SavePolygonData(const std::string& dir)
 {
 	Eigen::IOFormat csvfmt(Eigen::FullPrecision, Eigen::DontAlignCols, ", ", "\n", "", "", "", "");
 	uint32_t i = 0;
