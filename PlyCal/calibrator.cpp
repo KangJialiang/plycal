@@ -351,6 +351,8 @@ bool Calibrator::Remove()
 
 	polygons_.pop_back();
 	polygons_v_.pop_back();
+
+    return true;
 }
 
 bool Calibrator::Compute(Eigen::Matrix4d &tf)
