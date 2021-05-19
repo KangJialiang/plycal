@@ -93,11 +93,11 @@ public:
 		return is_valid_;
 	}
 
-    bool Project(pcl::PointCloud<pcl::PointXYZRGB>& pc, cv::Mat& img)
+    void Project(pcl::PointCloud<pcl::PointXYZRGB>& pc, cv::Mat& img)
     {
         Project(pc, img, T_);
     }
-    bool Project(pcl::PointCloud<pcl::PointXYZRGB>& pc, cv::Mat& img,
+    void Project(pcl::PointCloud<pcl::PointXYZRGB>& pc, cv::Mat& img,
                  const Eigen::Matrix4d& tf);
 
 private:

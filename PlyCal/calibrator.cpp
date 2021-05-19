@@ -642,7 +642,7 @@ uint32_t Calibrator::SavePolygonData(const std::string& dir)
 
 
 
-bool Calibrator::Project(pcl::PointCloud<pcl::PointXYZRGB>& pc, cv::Mat& img,
+void Calibrator::Project(pcl::PointCloud<pcl::PointXYZRGB>& pc, cv::Mat& img,
 						 const Eigen::Matrix4d& tf)
 {
 	const double resolution = 0.1;
